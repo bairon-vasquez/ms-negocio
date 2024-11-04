@@ -5,6 +5,12 @@ export default class CategoriaProducto extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
+  @column()
+  public categoria_id:number
+
+  @column()
+  public producto_id:number
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 

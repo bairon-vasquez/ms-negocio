@@ -5,6 +5,15 @@ export default class Cliente extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
+  @column()
+  public telefono:string
+
+  @column()
+  public cantidadPedidos:number
+
+  @column()
+  public producto_id: number
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 
